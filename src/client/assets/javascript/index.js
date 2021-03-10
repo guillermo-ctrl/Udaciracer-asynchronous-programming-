@@ -320,7 +320,13 @@ function defaultFetchOpts() {
 // TODO - Make a fetch call (with error handling!) to each of the following API endpoints 
 
 function getTracks() {
-	// GET request to `${SERVER}/api/tracks`
+	return fetch(`${SERVER}/api/tracks`, {
+		method: 'GET',
+		...defaultFetchOpts(),
+	})
+	.then(res => res.json())
+	.catch(err => console.log(err))
+	// GET request to `${SERVER}/api/tracks` THIS IS WHERE WE START
 }
 
 function getRacers() {
