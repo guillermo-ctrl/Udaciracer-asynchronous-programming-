@@ -1,7 +1,5 @@
 //NEED TO RUN THIS ./bin/server.exe ORIGIN_ALLOWED=http://localhost:3000
 
-// PROVIDED CODE BELOW (LINES 1 - 80) DO NOT REMOVE
-
 // The store will hold all information needed globally
 var store = {
     track_id: undefined,
@@ -74,7 +72,6 @@ async function delay(ms) {
         console.log(error)
     }
 }
-// ^ PROVIDED CODE ^ DO NOT REMOVE
 
 // This async function controls the flow of the race, add the logic and error handling
 async function handleCreateRace() {
@@ -152,7 +149,6 @@ function runRace(raceID) {
 
 }
 
-
 async function runCountdown() {
     try {
         // wait for the DOM to load
@@ -213,7 +209,6 @@ function handleAccelerate() {
 }
 
 // HTML VIEWS ------------------------------------------------
-// Provided code - do not remove
 
 function renderRacerCars(racers) {
     if (!racers.length) {
@@ -351,9 +346,6 @@ function renderAt(element, html) {
     node.innerHTML = html
 }
 
-// ^ Provided code ^ do not remove
-
-
 // API CALLS ------------------------------------------------
 
 const SERVER = 'http://localhost:8000'
@@ -368,7 +360,7 @@ function defaultFetchOpts() {
     }
 }
 
-// TODO - Make a fetch call (with error handling!) to each of the following API endpoints 
+// Fetch call (with error handling!) to each of the following API endpoints 
 
 async function getTracks() {
     // GET request to `${SERVER}/api/tracks`
