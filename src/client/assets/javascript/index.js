@@ -81,7 +81,7 @@ async function handleCreateRace() {
         //throw an error if no
         if (!trackid || !playerid) {
             alert(`Please, select a track and racer`);
-            throw new Error('Need to choose a racer and track');
+            throw new Error('Need to choose a tree and track');
         }
         // const race = TODO - invoke the API call to create the race, then save the result
         const race = new Promise((resolve, reject) => {
@@ -130,20 +130,16 @@ function runRace(raceID) {
                 checklength(20)
 
                 if (res.status === 'in-progress') {
-                    // TODO - if the race info status property is "in-progress", update the leaderboard by calling: 
                     renderAt('#leaderBoard', raceProgress(res.positions));
                 } else {
-                    // TODO - if the race info status property is "finished", run the following:
                     clearInterval(raceInfo); // to stop the interval from repeating
                     renderAt('#race', resultsView(res.positions)); // to render the results view
                     resolve(res); // resolve the promise
                 }
-                // remember to add error handling for the Promise
             } catch (error) {
                 console.log(error);
             }
         }
-        // TODO - use Javascript's built in setInterval method to get race info every 500ms 
         const raceInfo = setInterval(checkStatus, 500);
     })
 
@@ -155,12 +151,12 @@ async function runCountdown() {
         await delay(1000)
         let timer = 3
         return new Promise(resolve => {
-            // TODO - use Javascript's built in setInterval method to count down once per second
+            // use Javascript's built in setInterval method to count down once per second
             const update = () => {
                 // run this DOM manipulation to decrement the countdown for the user
                 document.getElementById('big-numbers').innerHTML = --timer
                 if (timer === 0) {
-                    // TODO - if the countdown is done, clear the interval, resolve the promise, and return
+                    // if the countdown is done, clear the interval, resolve the promise, and return
                     document.getElementById('big-numbers').innerHTML = "Go!"
                     clearInterval(countdown)
                     resolve()
@@ -213,7 +209,7 @@ function handleAccelerate() {
 function renderRacerCars(racers) {
     if (!racers.length) {
         return `
-			<h4>Loading Racers...</4>
+			<h4>Loading Trees...</4>
 		`
     }
 
@@ -233,7 +229,7 @@ function renderRacerCard(racer) {
 
     return `
 		<li class="card podracer" id="${id}">
-			<h3>Name: ${driver_name}</h3>
+			<h3>Species:<br> ${driver_name}</h3>
 			<p>Speed: ${top_speed}</p>
 			<p>Acceleration: ${acceleration}</p>
 			<p>Handling: ${handling}</p>
@@ -291,7 +287,7 @@ function renderRaceStartView(track, racers) {
 			</section>
 			<section id="accelerate">
 				<h2>Directions</h2>
-				<p>Click the button as fast as you can to make your racer go faster!</p>
+				<p>Click the button as fast as you can to make your tree run faster!</p>
 				<button id="gas-peddle">Click Me To Win!</button>
 			</section>
 		</main>
@@ -363,7 +359,6 @@ function defaultFetchOpts() {
 // Fetch call (with error handling!) to each of the following API endpoints 
 
 async function getTracks() {
-    // GET request to `${SERVER}/api/tracks`
     return fetch(`${SERVER}/api/tracks`, {
             ...defaultFetchOpts(),
         })
@@ -417,9 +412,6 @@ async function startRace(id) {
 }
 
 function accelerate(id) {
-    // POST request to `${SERVER}/api/races/${id}/accelerate`
-    // options parameter provided as defaultFetchOpts
-    // no body or datatype needed for this request
     return fetch(`${SERVER}/api/races/${id}/accelerate`, {
             method: 'POST',
             ...defaultFetchOpts(),
