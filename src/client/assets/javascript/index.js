@@ -80,7 +80,7 @@ async function handleCreateRace() {
         const trackid = store.track_id
         //throw an error if no
         if (!trackid || !playerid) {
-            alert(`Please, select a track and racer`);
+            alert(`Please, select a track and tree`);
             throw new Error('Need to choose a tree and track');
         }
         // const race = TODO - invoke the API call to create the race, then save the result
@@ -224,7 +224,8 @@ function renderRacerCard(racer) {
         driver_name,
         top_speed,
         acceleration,
-        handling
+        handling,
+        image
     } = racer
 
     return `
@@ -233,6 +234,8 @@ function renderRacerCard(racer) {
 			<p>Speed: ${top_speed}</p>
 			<p>Acceleration: ${acceleration}</p>
 			<p>Handling: ${handling}</p>
+            <img src="../assets/Images/${driver_name}.png" >
+            .
 		</li>
 	`
 }
@@ -265,6 +268,7 @@ function renderTrackCard(track) {
 		<li id="${id}" class="card track">
 			<h3>${name}</h3>
 			<p>Length: ${Math. round(segments.length/2)-1}/100</p>
+            <img src="../assets/Images/${name}.png" >
 		</li>
 	`
 }
@@ -304,7 +308,12 @@ function resultsView(positions) {
 		</header>
 		<main>
 			${raceProgress(positions)}
-			<a href="/race">Start a new race</a>
+            
+			<section>
+                <a class="button" href="/race">Start a new race</a>
+			</section>
+		
+			
 		</main>
 	`
 }

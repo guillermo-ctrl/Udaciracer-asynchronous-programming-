@@ -1,0 +1,133 @@
+[33mcommit 40c79a5648d16853a52603ae9705b10aa1100aa6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Guillermo González <you@example.com>
+Date:   Sat Mar 27 17:40:15 2021 +0100
+
+    Changed Wording
+
+[33mcommit 78c4d86159f574a0d1d7fa686cba6cbbc353349f[m
+Author: Guillermo González <you@example.com>
+Date:   Sat Mar 27 16:51:40 2021 +0100
+
+    Udaciracer instead of example app
+
+[33mcommit 55b8e8ce84160e8be65a52c67b416aa3c6fb5443[m
+Author: Guillermo González <you@example.com>
+Date:   Sat Mar 27 16:41:40 2021 +0100
+
+    Comments changed: Everything subject to change
+
+[33mcommit 19f2142d197bce59954ca3790ea4c52861438dba[m
+Author: Your Name <you@example.com>
+Date:   Sat Mar 13 14:31:12 2021 +0100
+
+    Refactored & beautified
+
+[33mcommit 66fe2e49facc243eeb5678dcb03abf68c657159d[m
+Author: Your Name <you@example.com>
+Date:   Fri Mar 12 16:22:20 2021 +0100
+
+    Working prototype
+
+[33mcommit 075340906a02d325ee77d35bba3ffb35d73ab4ab[m
+Author: Your Name <you@example.com>
+Date:   Wed Mar 10 10:54:22 2021 +0100
+
+    API try
+
+[33mcommit 0b4b14158efe0bc7f87d1f2916384fa847e2d6bf[m
+Author: Your Name <you@example.com>
+Date:   Tue Mar 9 16:28:37 2021 +0100
+
+    first commit part 2
+
+[33mcommit 76685400aa9f7a7192b5b2dd3b268c004acf87d9[m
+Author: Your Name <you@example.com>
+Date:   Tue Mar 9 16:24:53 2021 +0100
+
+    First commit
+
+[33mcommit 7f0fb99aee9a6a71ace6de5eb65788b0c7c76d69[m
+Author: Ronny Hoesada <ronny@udacity.com>
+Date:   Wed Jan 27 09:01:52 2021 -0800
+
+    update README.md
+
+[33mcommit feeb1dcf0f43e26723dd2d3da3a238194ceb2212[m
+Author: ronny-udacity <42421205+ronny-udacity@users.noreply.github.com>
+Date:   Tue Jan 19 16:56:04 2021 -0800
+
+    Additional instructions for Windows users
+    
+    New section: WINDOWS USERS -- Setting Environment Variables
+
+[33mcommit 27832a9cd181e1dfac854df2a824decf1dcc8cb9[m
+Author: alyssamhope <berkeleycole@users.noreply.github.com>
+Date:   Wed Jun 24 13:48:54 2020 -0700
+
+    Updates a typo
+
+[33mcommit 81b9b16df6bc42a6245d28ba5f400ba4ad61cee1[m
+Author: alyssamhope <berkeleycole@users.noreply.github.com>
+Date:   Wed Jun 24 12:04:45 2020 -0700
+
+    Update index.js
+
+[33mcommit a1720b92bbe0d9e9cfbe893bbb0d8f76cc363683[m
+Author: Chris Vasquez <chrvasq@outlook.com>
+Date:   Mon Jun 1 09:59:33 2020 -0700
+
+    Update background style, README, and data.json
+
+[33mcommit 9d55121bc12f13e0c9518d5b6ccb3e61bc162025[m
+Author: Chris Vasquez <chrvasq@outlook.com>
+Date:   Mon May 11 13:23:50 2020 -0700
+
+    Add missing pages dir and API calls
+
+[33mcommit d91e077e227c84c5041625fb975f99cbffa443b2[m
+Author: Chris Vasquez <chrvasq@outlook.com>
+Date:   Mon Apr 27 10:10:33 2020 -0700
+
+    Update README
+
+[33mcommit 6c16810a9c1d90fc52437069c11b87d7f275eb3c[m
+Author: Chris Vasquez <chrvasq@outlook.com>
+Date:   Mon Apr 27 09:50:49 2020 -0700
+
+    Update license
+
+[33mcommit 71b0fcf226d1807b42ea22ca75f6261a40b031f9[m
+Author: Chris Vasquez <chrvasq@outlook.com>
+Date:   Mon Apr 27 09:48:27 2020 -0700
+
+    Update starter files
+
+[33mcommit f0ea5ae6dfc985832610892b3cd78ac406646dbd[m
+Author: Chris Vasquez <chrvasq@outlook.com>
+Date:   Mon Apr 27 09:44:41 2020 -0700
+
+    Update starter files
+
+[33mcommit dc80c804d51fe69f8d9c8da415533df6d3b7c0ca[m
+Author: Amy Hua <foramyhua@gmail.com>
+Date:   Wed Dec 11 10:47:40 2019 -0800
+
+    Update README.md
+
+[33mcommit a18b0ae07fc0dfa75161f6797a35c4260b3d5cf4[m
+Author: Amy Hua <foramyhua@gmail.com>
+Date:   Wed Dec 11 10:47:02 2019 -0800
+
+    Update README.md
+
+[33mcommit 330420791c6ed62b3ca7711ac0bf1577ba0ce2c7[m
+Author: Amy Hua <foramyhua@gmail.com>
+Date:   Wed Dec 11 10:45:51 2019 -0800
+
+    Update starter code
+
+[33mcommit fb7aeb21aa973bcb161ea5fec219688147534b25[m
+Author: Chris Vasquez <10319697+Chrvasq@users.noreply.github.com>
+Date:   Fri Oct 18 14:45:57 2019 -0700
+
+    Initial commit
