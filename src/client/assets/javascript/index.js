@@ -83,7 +83,7 @@ async function handleCreateRace() {
             alert(`Please, select a track and tree`);
             throw new Error('Need to choose a tree and track');
         }
-        // const race = TODO - invoke the API call to create the race, then save the result
+        // invoke the API call to create the race, then save the result
         const race = new Promise((resolve, reject) => {
                 resolve(createRace(playerid, trackid))
                 return data
@@ -94,7 +94,7 @@ async function handleCreateRace() {
                 return data
             })
             .then((data) => {
-                // TODO - update the store with the race id
+                // update the store with the race id
                 store.race_id = data.ID - 1
                 return data
             })
@@ -103,7 +103,7 @@ async function handleCreateRace() {
                 alert(error);
             })
         // The race has been created, now start the countdown
-        // TODO - call the async function runCountdown
+        // call the async function runCountdown
         race.then(await runCountdown())
         startRace(store.race_id)
         runRace(store.race_id)
@@ -183,7 +183,7 @@ function handleSelectPodRacer(target) {
     // add class selected to current target
     target.classList.add('selected')
 
-    // TODO - save the selected racer to the store
+    // save the selected racer to the store
     store.player_id = target.id //this could be handled more functionally 
 }
 
@@ -196,7 +196,7 @@ function handleSelectTrack(target) {
     // add class selected to current target
     target.classList.add('selected')
 
-    // TODO - save the selected track id to the store
+    // save the selected track id to the store
     store.track_id = target.id
 }
 
